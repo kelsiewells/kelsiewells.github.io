@@ -1,0 +1,50 @@
+/*
+font-family: 'Gayathri', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fee4ee;
+  font-size: 14px;
+  color: #1f5626;
+
+}
+
+h1 {
+  font-family: 'Gayathri', serif;
+  color:#1f5626;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fee4ee;
+  font-size: 10px;
+  color: #1f5626;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+a {
+  color: #bca6af;
+}
+.grid-demo section{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 40px;
+  margin:20px;
+}
+
+.grid-demo div {
+
+  padding: 30px;
+  margin: 40px;
+}
+.grid-demo .feature {
+  grid-column: ;
+  grid-row: ;
+  font-weight: 400;
+}
