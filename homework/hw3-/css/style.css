@@ -1,0 +1,70 @@
+body {
+	background-color:#96bbd6;
+}
+
+main {
+	width: 80%;
+	margin: 80px auto;
+	}
+
+
+
+
+.svg-lilo {
+	width:300px;
+	margin:80px;
+	animation-name: movelilo;
+	animation-duration: 8s;
+	animation-fill-mode: forwards;
+	position: relative;
+
+}
+
+	/* Standard syntax */
+
+
+@keyframes movelilo {
+  from {top: 0px;}
+  to {top: 400px;}
+   0%  { opacity: 1;    }
+   100% { opacity: 0;    }
+}
+
+
+
+	@keyframes button {
+   0%  { opacity: 0;    }
+   100% { opacity: 1;    }
+ 
+}
+
+.button {
+
+  background-color: #383838;
+	padding: 12px 20px;
+	border-radius: 12px;
+	color: #fff;
+	border: 0px;
+	animation-name: button;
+  opacity:1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 8s;
+  animation-timing-function: ease-in;
+
+}
+
+/* Standard syntax */
+
+@keyframes buttonstyle {
+
+	0% {
+  	background-color:#96bbd6;)
+}
+ 	100% {
+  	background-color: #383838;
+  }
+}
+
+
+
