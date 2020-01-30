@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Crash Course | Selectors</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"> 
+
+		$(document).ready(function(){
+
+		});
+	</script>
+	<style>
+			body{
+				font-size: 17px;
+				font-family: arial;
+				background: pink;
+				line-height: 1.5m;
+			}
+			header{
+				background: #fff;
+				color: red;
+				padding: 40px;
+				text-align: center;
+				border-bottom: 4px red solid;
+				margin-bottom: 10px;
+			}
+
+			#container{
+				width: 90%;
+				margin: auto;
+				padding: 10px;
+			}
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>jQuery Exploration</h1>
+</header>
+
+<div id="contaniner">
+
+	<h1 id="heading1">What Did I try?</h1>
+
+<p>I was able to try a few things that I had learned from the Traversy Media YouTube videos.</p>
+
+<ul id='list'>
+	<li>List Selections</li>
+	<li>Button Interations</li>
+	<li>Mouse Events</li>
+	<li>Selective Changes</li>
+
+</ul>
+
+	<button>Send Love Here</button>
+	<input type='text'>
+		<a href="https://www.google.com/search?source=hp&ei=Ck4tXt2xGc_Y-wSFtLKAAw&q=what+is+love&oq=what+is+love&gs_l=psy-ab.3..0l5j0i131j0l4.699.1645..1724...0.0..0.196.731.12j1......0....1..gws-wiz.....6..0i362i308i154i357.cYYzE9qpP6E&ved=0ahUKEwjd3rng7KDnAhVP7J4KHQWaDDAQ4dUDCAg&uact=5">What is love?</a>
+	
+
+	<h1 class="heading2">What was challenging? </h1>
+<p class="para2">Troublehshooting. I had a challenging time trying to trouble shoot. Because I missed out on class, I wasn't able to fix mistakes in my code when certain things weren't loading. <span> Another challenging thing was trying to not leave out important elements like periods, paranthesis or quotations.</span></p>
+
+
+
+</div>
+
+		
+	<script>
+//selectors here
+		//$('h1:).hide();
+		//$('h1#heading1').hide();
+		//$('.heading2').hide();
+
+		$('p span').css('color', 'red');
+		/*$('ul#list li:first').css('color','red');
+		$('ul#list li:last').css('color','green');
+		*/
+
+		$('ul#list li:even').css('background-color','red');
+		$('ul#list li:odd').css('background-color','white');
+		$('ul#list li:nth-child(3n)').css('list-style','none');
+
+		$(':text').hide();
+
+		$('[href]').css('color','red' );
+	//WILDCARD	//$('*').hide();
+
+		
+
+		$( "button" ).click(function() {
+ 		 $( "p" ).hide( "slow" );
+			});
+
+		$('btn1').on('click', function(){
+			$('.para1').hide();
+			});
+		
+
+	</script>
+
+	
+</body>
+</html>
