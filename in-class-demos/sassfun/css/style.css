@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Odibee+Sans&display=swap");
+/*partials.scss*/
+/*
+font-family: 'Odibee Sans', helvetica ;
+font-family: 'Abel', helvetica;
+*/
+body {
+  font-family: "Abel", helvetica; }
+
+h1, h2, h2, h3, h4 {
+  color: #FFCB82; }
+
+h1, h2 {
+  font-size: 80px;
+  color: red; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 32px; }
+
+h4 {
+  font-size: 24px; }
+
+p {
+  font-ize: 24px; }
+
+.content {
+  width: 70%;
+  margin: auto;
+  padding: 20px; }
+  .content .content p {
+    font-size: 18px; }
+  .content a {
+    text-decoration: none;
+    color: #C2F8FF; }
+    .content a:hover {
+      text-decoration: line-through;
+      color: #ffc9c2; }
+
+/*# sourceMappingURL=style.css.map */
