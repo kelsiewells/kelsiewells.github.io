@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Vtopia</title>
+
 	<style>
 
 .topnav {
@@ -12,6 +15,7 @@
   overflow: hidden;
   background-color: white;
   border-bottom: 8px solid #f5dbcc;
+  z-index: 500;
 }
 
 .topnav a {
@@ -46,41 +50,36 @@
 .landing {
 	width:100vw;
 	height:75vh;
-	background-color:#d14428;
+	background-color:#D14428;
 	}
 
 
 h1 {
 	color:#DEC0B8;
-	padding-left:15px;
-	padding-top:15px;
 	font-family: apercu, sans-serif;
+	font-size:25px;
 }
  
 p {
 	color:#DEC0B8;
-	padding-left:15px;
 	font-family: apercu, sans-serif;
 	line-height: 1.1;
-
+	font-size:14px
 }
 
 h2 {
 	color:#DEC0B8;
-	padding-left:15px;
 	font-family: apercu, sans-serif;
 }
 
 h3 {
 	color:#DEC0B8;
-	padding-left:15px;
 	font-family: apercu, sans-serif;
+	font-size:14px
 }
 
 h4 {
 	color:#DEC0B8;
-	padding-left:15px;
-	padding-bottom: 10px;
 	font-size:12px;
 	font-family: apercu, sans-serif;
 	font-weight:300;
@@ -88,7 +87,6 @@ h4 {
 
 h5 {
 	color:#DEC0B8;
-	padding-left:15px;
 	font-size:12px;
 	font-family: apercu, sans-serif;
 	font-weight:300;
@@ -99,10 +97,12 @@ main {
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 4em;
 }
+
 .pic {
 	width: 100vw;
 	height: 100vh;
 }
+/*
 #one {
 	background-color: #D97D6A;
 }
@@ -112,11 +112,14 @@ main {
 #three {
 	background-color: #521B10;
 }
+*/
 
+/*
 .one-active {
 			background-image: url('images/cheeseplate.jpg');
-			background-size: 100% 100vh;
+			background-size: 50vw;
 			background-repeat: no-repeat;
+			background-color:#D97D6A; 
 			position: fixed;
 
 }
@@ -126,6 +129,8 @@ main {
 			background-size: 100% 100vh;
 			background-repeat: no-repeat;
 			position: fixed;
+			width: 100%;
+			height:100%;
 }
 
 .three-active {
@@ -133,6 +138,9 @@ main {
 			background-size: 100% 100vh;
 			background-repeat: no-repeat;
 			position: fixed;
+			width: 100%;
+			height:100%;
+
 }
 
 .fixed-one,
@@ -144,14 +152,9 @@ main {
 	top: 10px;
 	left: 10px;
 
-}
-
-.menu {
+}*/
 
 
-	height: 75vh; 
-  	overflow-y: auto;
-	}
 
 .landing-item {
 	background-color: #d14428;
@@ -164,10 +167,59 @@ main {
 	font-weight:600;
 } 
 
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('images/macandcheese.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color:yellow;
+  overflow-wrap: break-word;
+
+
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url('images/cheeseplate.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color:yellow;
+}
+
+.svg {
+
+	min-width: 60%;
+	min-height: 50px;
+	fill-color:#ffffff;
+	stroke-opacity:0;
+	background-opacity:0;
+	float:right;
+	width: 400px;
+}
+
 </style>
 </head>
 
 <body>
+
 <nav>
 <div class="topnav">
 
@@ -199,16 +251,105 @@ main {
   	</div>
 
 
+<div class="parallax"></div>
+<div style="height:100vh;background-color:#d14428">
+ 
+<h1>Cheese Plates - $6 per cheese piece</h1>
+
+			<p>Plates are garnished with a rotating selection of sweet and savory treats; dolmas, olives, veggies, and fresh organic fruit with house jam. </p>
+
+			<h4>Served with Grand Central Bakery baguettes and La Panzanella crackers<br>
+
+			Gluten Free New Cascadia bread and GF crackers available for $1</h4>
+
+		
+
+			<p>Extra bread and crackers or half GF $2</p>
+
+			<h1>Toasted Cheese Baguette - $6/12</h1>
+
+			<p>Toasted sliced baguette and melting cheese </p>
+
+			<h3>Your choice of dipping sauce: </h3>
+
+			<p>Cashew Cheese - $3<br>
+			Marinara - $2<br>
+			Soup of the day - $2</p>
+
+			<h4>Upgrade to deli case cheese for additional cost </h4>
+
+
+</div>
+
+
+
+
+
+<div class="parallax2"></div>
+<!-- <img src="images/mac&cheese-01.svg"> -->
+
+<div class="svg">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 298.03 30.45"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+
+	<path d="M33.39.67V30.16H26.21V11.72L19.82,30.16H13.61L7.18,11.68V30.16H0V.67H8.78l8,20.54L24.65.67Z" style="fill:#231f20"/>
+	<path d="M56.74,24.74H45.61l-1.85,5.42H36.2L47.08.67h8.28L66.23,30.16H58.59Zm-1.85-5.46L51.2,8.36,47.46,19.28Z" style="fill:#231f20"/>
+	<path d="M92,3.15a13.67,13.67,0,0,1,4.81,8.06h-7.6A7,7,0,0,0,86.58,8,7.24,7.24,0,0,0,82.45,6.8a6.32,6.32,0,0,0-5.09,2.31,9.37,9.37,0,0,0-1.93,6.18,9.26,9.26,0,0,0,1.93,6.15,6.33,6.33,0,0,0,5.09,2.29,7.16,7.16,0,0,0,4.13-1.18,7,7,0,0,0,2.59-3.19h7.6a13.71,13.71,0,0,1-4.81,8,14.43,14.43,0,0,1-9.39,3A14.84,14.84,0,0,1,75,28.5a13,13,0,0,1-5.06-5.36,16.79,16.79,0,0,1-1.79-7.85,16.86,16.86,0,0,1,1.79-7.86A13,13,0,0,1,75,2.08,14.84,14.84,0,0,1,82.57.17,14.53,14.53,0,0,1,92,3.15Z" style="fill:#231f20"/>
+	<path d="M128.52,30.16,125.07,26a11.53,11.53,0,0,1-.71,1.05,6.67,6.67,0,0,1-2.71,2.48,9,9,0,0,1-4.14.92,10.34,10.34,0,0,1-5.14-1.22,8.31,8.31,0,0,1-3.3-3.3,9.64,9.64,0,0,1-1.13-4.68,9,9,0,0,1,1.93-6,7.38,7.38,0,0,1,5-2.71l-.51-.84a9.16,9.16,0,0,1-1-2.1A7.67,7.67,0,0,1,113,7.31a6.55,6.55,0,0,1,1-3.53,7.19,7.19,0,0,1,3-2.63,10.36,10.36,0,0,1,4.68-1,9.56,9.56,0,0,1,5.92,1.61A8.06,8.06,0,0,1,130.41,6a11.37,11.37,0,0,1,.46,4.07h-6.68c0-.48,0-1-.08-1.55-.09-1.6-.87-2.4-2.35-2.4a2,2,0,0,0-1.49.55,1.82,1.82,0,0,0-.57,1.38A2.75,2.75,0,0,0,120,9.37a14.48,14.48,0,0,0,1,1.55l14.7,19.24ZM120,23.56a3.14,3.14,0,0,0,.95-2.35,3.19,3.19,0,0,0-1-2.44,3.6,3.6,0,0,0-2.52-1,3.33,3.33,0,0,0-2.37.84,3.08,3.08,0,0,0-.91,2.39,3.29,3.29,0,0,0,1,2.5,3.47,3.47,0,0,0,2.5.95A3.29,3.29,0,0,0,120,23.56Z" style="fill:#231f20"/>
+	<path d="M169.66,3.15a13.67,13.67,0,0,1,4.81,8.06h-7.61A7,7,0,0,0,164.28,8a7.25,7.25,0,0,0-4.14-1.18,6.3,6.3,0,0,0-5.08,2.31,9.31,9.31,0,0,0-1.93,6.18,9.21,9.21,0,0,0,1.93,6.15,6.31,6.31,0,0,0,5.08,2.29,7.17,7.17,0,0,0,4.14-1.18,7,7,0,0,0,2.58-3.19h7.61a13.71,13.71,0,0,1-4.81,8,14.43,14.43,0,0,1-9.39,3,14.84,14.84,0,0,1-7.6-1.91,13,13,0,0,1-5.06-5.36,16.79,16.79,0,0,1-1.79-7.85,16.86,16.86,0,0,1,1.79-7.86,12.93,12.93,0,0,1,5.06-5.35,14.84,14.84,0,0,1,7.6-1.91A14.53,14.53,0,0,1,169.66,3.15Z" style="fill:#231f20"/>
+	<path d="M204.16.46v29.7h-7.22V17.77H185.68V30.16H178.5V.46h7.18V12h11.26V.46Z" style="fill:#231f20"/>
+	<path d="M216.3,6.17v6.22h10v5.42h-10V24.4h11.3v5.76H209.12V.46H227.6V6.17Z" style="fill:#231f20"/>
+	<path d="M238.85,6.17v6.22h10v5.42h-10V24.4h11.3v5.76H231.67V.46h18.48V6.17Z" style="fill:#231f20"/>
+	<path d="M274.36,26.12a8.37,8.37,0,0,1-3.53,3.15,12.32,12.32,0,0,1-5.65,1.18A13.27,13.27,0,0,1,257,28a8.85,8.85,0,0,1-3.53-6.8h7.65a4,4,0,0,0,1.2,2.65,3.68,3.68,0,0,0,2.62,1,3.05,3.05,0,0,0,2.18-.75,2.64,2.64,0,0,0,.8-2,2.59,2.59,0,0,0-.73-1.89,5.79,5.79,0,0,0-1.83-1.24c-.73-.32-1.74-.71-3-1.15a38.15,38.15,0,0,1-4.6-1.87,8.61,8.61,0,0,1-3.07-2.69,7.81,7.81,0,0,1-1.28-4.64A7.85,7.85,0,0,1,254.68,4a8.6,8.6,0,0,1,3.72-3,13.5,13.5,0,0,1,5.44-1,12.21,12.21,0,0,1,7.88,2.35A9,9,0,0,1,275,8.82h-7.77a4,4,0,0,0-1.07-2.33,3.16,3.16,0,0,0-2.33-.86,3,3,0,0,0-2,.67,2.46,2.46,0,0,0-.77,2,2.52,2.52,0,0,0,.69,1.79,5.28,5.28,0,0,0,1.74,1.2c.7.3,1.71.7,3,1.17a34.49,34.49,0,0,1,4.66,1.91,9,9,0,0,1,3.11,2.75,8,8,0,0,1,1.3,4.71A8.13,8.13,0,0,1,274.36,26.12Z" style="fill:#231f20"/>
+	<path d="M286.73,6.17v6.22h10v5.42h-10V24.4H298v5.76H279.55V.46H298V6.17Z" style="fill:#231f20"/></g></g></svg>
+</div>
+
+<div style="height:100vh;background-color:red;font-size:36px">
+
+<h1>Mac and Cheese - $7/13</h1>
+
+		<p>Served with sauteed onions, cashew-based cheese sauce, comes topped with bread crumbs, soy curl bacon bits, green onions & cheese garnish </p><br>	
+
+		<h5>Gluten free mac and cheese $2 extra</h5>
+
+	
+
+		<h3>Add-Ons </h3>
+		<p>Avocado $2/3</p>
+		<p>Broccoli  $.75/1.5</p>
+		<p>Tomato $.75/1.5</p>
+		<p>Peas $1/2</p>
+		<p>Shiitake Bacon $1.75/3.5</p>
+		<p>Soy Curl Bacon $1/2</p>
+		<p>Fried Buffalo Tofu $1.5/3</p>
+		<p>Scoop o’ Soup $2/3</p>
+		<p>Marinara $1/2</p>
+		<p>Thai chili Paste $1/2</p>
+		<p>Green Curry $1/2</p>
+		<p>Pesto $1.5/3</p>
+		<p>Buffalo Sauce $.5/1</p>
+		<p>House Cheese 1/2oz/1oz</p>
+		<h4></h4>
+
+</div>
+
+
 <main>
 
+
+
+
+
+
+
+<!--
 		<section>
 			<div id="fixed-one" class="pic fixed-one one-active"></div>
 			<div id="fixed-two" class="pic fixed-two"></div>
 			<div id="fixed-three" class="pic fixed-three"></div>
-		</section>
+		</section> -->
 <!-- 						<img  class='pic' src="http://placekitten.com/700/600"> -->
 
-
+<!--
 		<div class="menu">
 		<section id="one" class="menu">
 
@@ -305,7 +446,7 @@ main {
 
 		<h4>Substitutions available upon request for an additional charge. </h4>
 				</section>
-	</div>
+	</div> -->
 	
 	</main>
 	
