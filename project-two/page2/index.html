@@ -10,9 +10,73 @@
 		main {
 			background-color: #d14428;
 		float:center;
+		padding-top: 100px;
 		}
 
+.topnav {
+  position: fixed;
+  top:0;
+  width:100vw;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 8px solid #f5dbcc;
+  z-index: 500;
+}
+
+.topnav a {
+  float: right;
+  color: #d14428;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: apercu, sans-serif;
+  font-weight:600;
+}
+
+.topnav a:hover {
+  background-color: #d14428;
+  color: black;
+}
+
+.topnav-centered a {
+  float: left;
+  position: none;
+  left: 50%;
+  right:50%;
+
+}
+
+.topnav-right {
+  float: right;
+}
+
 	</style>
+
+	<body>
+		<nav>
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+
+    <a href="http://kelsiewells.github.io/project-two/index.html" class="active">LOGO</a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+
+  <a href="https://postmates.com/merchant/vtopia-cheese-shop-deli-portland">ORDER ONLINE</a>
+  <a href="page2/index.html">CONTACT</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="#abouttarget">ABOUT</a>
+    <a href="#menutarget">MENU</a>
+  </div>
+  	  	
+</div>
+
+	</nav>	</body>
 
 		<main>
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScO2sI5sJVeU_VMkoUxIJwMyDJsc42jJQ5wUT-xu68G9_L9lQ/viewform?embedded=true" width="640" height="999" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
